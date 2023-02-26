@@ -1,0 +1,140 @@
+@import url('reset.css');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* !GLOBAL STYLES */
+body {
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+background: #F5F5F5;
+color: #161616;
+font-size: 18px;
+}
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+	background: #81A36B;
+	
+}
+.header_container {
+	display: flex;
+	max-width: 1440px;
+	margin: 0 auto;
+	
+}
+.header_logo {
+	padding: 20px 0 20px 165px;
+}
+.header_title {
+	padding-left: 130px;
+	
+}
+.header_title ul > li {
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.header_title li + li {
+	padding-left: 90px;
+}
+
+/* MAIN */
+.main {
+	margin: 0 auto;
+	max-width: 1440px;
+
+}
+.title {
+	display: flex;
+	
+}
+.title_left {
+	padding-left: 139px;
+	padding-right: 50px;
+	text-align: center;
+	width: 700px;
+}
+.title_right {
+	margin-left: 50px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 186px;
+	margin-bottom: 50px;
+	font-weight: 400;
+	font-size: 62px;
+	font-family: 'Montserrat';
+}
+p {
+	text-align: left;
+}
+.bottoms {
+	margin-top: 50px;
+}
+/* *TODO: PRICE */
+.price {
+	background: #81A36B;
+	padding: 80px 0;
+	margin: 0 auto;
+}
+
+.price > div ul {
+	display: flex;
+	justify-content: space-between;
+}
+.img {
+	text-align: center;
+}
+li > img {
+ 	margin-bottom: 20px;
+}
+.about {
+	padding: 124px 450px;
+	text-align: center;
+}
+h3 {
+	font-family: 'Montserrat';
+    font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+}
+/* !FOOTER */
+.footer {
+	background: #81A36B;
+	padding: 60px 0;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.flex-container h3 {
+	font-size: 24px;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+
+.footer-contact a {
+	color: #161616;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.footer-contact ul > li + li {
+	margin-top: 20px;
+}
+/* .footer-contact ul > li:last-child {
+	margin-bottom: 0;
+} */
+.footer-year {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-align: center;
+}

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header_container">
           <div class="header_logo">
@@ -24,11 +24,11 @@
           </div>
           <div class="header_text">
             <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Как мы работаем</a></li>
-              <li><a href="#">Наши работы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#header">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#how_we_work">Как мы работаем</a></li>
+              <li><a href="#our_works">Наши работы</a></li>
+              <li><a href="#footer">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -46,9 +46,11 @@
               на латинице с начала XVI века.
             </p>
             <div class="bottons">
-              <button>Заказать букет</button>
-              <a href="#">Помощь флориста</a>
+              <button class="buy_flower_botton">Заказать букет</button>
+              <div class="link_help">
+                <a href="#footer">Помощь флориста</a>
             </div>
+          </div>
           </div>
           <div class="amelia_box_right">
             <img
@@ -61,7 +63,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about container" id="about">
         <h3>О НАС</h3>
         <span>
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -97,10 +99,10 @@
         </div>
       </section>
 
-      <section class="works container">
-        <div>
-          <div class="title_2_high">
-            <div class="title_2_high_text">
+      <section class="works">
+        <div class="container">
+          <div class="how_we_work" id="how_we_work">
+            <div class="title_2_high_text" >
               <h3>Как мы работаем</h3>
               <p>
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -118,33 +120,31 @@
             </div>
           </div>
 
-          <div class="our_works">
+          <div class="our_works" id="our_works">
             <h3>Наши работы</h3>
             <div class="work_cards">
               
                <div class="work_card">
-                <img src="images/work_1.jpg" alt="photo_flowers" />
+                <img src="images/work_1.jpg" alt="photo_flowers" width="320" height="402" />
                 <p>Букет” Флоренция”</p>
               </div>
 
               <div class="work_card">
-                <img src="images/work_2.jpg" alt="photo_flowers" />
+                <img src="images/work_2.jpg" alt="photo_flowers" width="320" height="402" />
                 <p>Букет” Флоренция”</p>
               </div>
               <div class="work_card">
-                <img src="images/work_3.jpg" alt="photo_flowers" />
+                <img src="images/work_3.jpg" alt="photo_flowers" width="320" height="402"/>
                 <p>Букет” Флоренция”</p>
               </div>
             </div>
-            
-             
-            
+          
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="flex-container">
           <div class="footer-contact">
@@ -160,15 +160,24 @@
           </div>
           <div class="footer-social">
             <h3>Мы в соц. сетях</h3>
-            <!-- <ul>
+            
+            <ul>
 						<li>
 							<a href="#">
-								<img src="" alt="">
+								<img src="images/insta.svg" alt="Insta-logo">
 							</a>
 						</li>
-						<li></li>
-						<li></li>
-					</ul> -->
+						<li>
+							<a href="#">
+								<img src="images/telegram.svg" alt="Telegram-logo">
+							</a>
+						</li><li>
+							<a href="#">
+								<img src="images/Viber.svg" alt="Viber-logo">
+							</a>
+						</li>
+					</ul>
+          
           </div>
         </div>
         <p class="footer-year">(c)2023</p>

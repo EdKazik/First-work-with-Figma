@@ -9,20 +9,28 @@ background: #F5F5F5;
 color: #161616;
 font-size: 18px;
 }
+
 .container {
 	max-width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
 h1 {
 	font-weight: 400;
 	font-size: 62px;
 	font-family: 'Montserrat';
 }
+
 h3 {
 	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 32px;
+}
+
+p {
+	font-size: 18px;
+    line-height: 28px
 }
 
 span {
@@ -31,11 +39,17 @@ span {
 	line-height: 28px;
 }
 
+a {
+	text-decoration: none;
+	color: #161616;
+}
+
 /* HEADER */
 .header {
 	background: #81A36B;
 	padding: 20px 0;
 }
+
 .header_container {
 	display: flex;
 	justify-content: space-between;
@@ -46,10 +60,7 @@ span {
 	display: flex;
 	gap: 90px;
 }
-.header_text ul > li a {
-	text-decoration: none;
-	color: #161616;
-}
+
 .header_text ul > li a:hover {
 	color: blueviolet;
 }
@@ -59,27 +70,42 @@ span {
 
 /* AMELIA BOX */
 
+.amelia_box {
+	margin-bottom: 120px;
+}
+
 .amelia_box .container {
 	display: flex;
 	gap: 30px;
 	align-items: center;
 
 }
+
 .amelia_box_left {
 	flex: 1 1 50%;
+}
+
+.amelia_box_left h1, p {
+	margin-bottom: 50px;
 }
 
 .amelia_box_right {
 	flex: 1 1 50%;
 }
+
 .amelia_box_right img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
 .bottons {
+	display: flex;
+	gap: 65px;
+	padding-left: 15px;
 	
 }
+
 button {
 		width: 190px;
 		height: 60px;
@@ -87,33 +113,53 @@ button {
 		font-weight: 400;
 		font-size: 18px;
 }
-.buttons button {
-	width: 100%;
+
+.buy_flower_botton {
+	border-radius: 5px;
+	background: #81A36B;
+	font-weight: 400;
+	font-size: 18px;
+}	
+
+.link_help {
+	padding: 20px 16px;
+	border: 3px solid #81A36B;
+	border-radius: 5px;
 }
+
+.link_help a:hover {
+	color: red;
+}
+
 .about {
-	margin: 0 auto;
 	max-width: 540px;
 	text-align: center;
-	
+	margin-bottom: 120px;
 }
+
 .about > h3 {
 	margin-bottom: 52px;
+	
 }
 
 
 /* *TODO: PRICE */
+
 .price {
 	background: #81A36B;
 	padding: 80px 0;
 	margin: 0 auto;
 }
+
 .price > div ul {
 	display: flex;
 	justify-content: space-between;
 }
+
 .img {
 	text-align: center;
 }
+
 li > img {
  	margin-bottom: 20px;
 }
@@ -121,22 +167,19 @@ li > img {
 
 /* WORKS*/
 
-.title_2_high {
+.how_we_work {
 	display: flex;
 	flex-flow: row-reverse;
+	padding: 120px 0;
+	flex: 1 1 50%;
+	gap: 30px
+	;
 }
-.title_2_high_img {
-	
-}
-.title_2_high_text {
-	
-}
-.title_2_high_text > h3 {
-	
-}
+
 .our_works {
 	padding-bottom: 120px;
 }
+
 .our_works h3 {
 	text-align: center;
 	margin-bottom: 80px;
@@ -147,29 +190,16 @@ li > img {
 	text-align: center;
 	gap: 30px;
 }
+
 .work_card {
 	background: #81A36B;
-	padding: 15px 15px 93px;
+	padding: 15px 15px 50px;
 	flex: 1 1 30%;
 }
+
 .work_card p {
 	padding-top: 23px;
 }
-
-/* .title_2_low h3 {
-	text-align: center;
-	margin-bottom: 80px;
-}
-.title_2_low_img {
-	
-}
-.title_2_low_images_box {
-	background: #81A36B;
-	width: 350px;
-	text-align: center;
-	padding-top: 15px;
-	
-} */
 
 
 /* !FOOTER */
@@ -200,9 +230,12 @@ li > img {
 .footer-contact ul > li + li {
 	margin-top: 20px;
 }
-/* .footer-contact ul > li:last-child {
-	margin-bottom: 0;
-} */
+
+.footer-social ul {
+	display: flex;
+	justify-content: space-around;
+}
+
 .footer-year {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
